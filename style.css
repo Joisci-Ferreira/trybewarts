@@ -5,6 +5,11 @@
   display: flex;
   
 }
+.trybewarts-login {
+  display: flex;
+  height: 20px;
+}
+
 .header h1 {
   color: white;
 }
