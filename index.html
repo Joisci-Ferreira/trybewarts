@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,15 +20,17 @@
     </header>
     <main>
       <form action="" method ="get" id="evaluation-form" enctype="multipart/form-data">
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
-        <input type="text" id="input-email" placeholder="Email">
-        <select name="" id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
+        <div class="input-infos">
+          <input type="text" id="input-name" placeholder="Nome">
+          <input type="text" id="input-lastname" placeholder="Sobrenome">
+          <input type="text" id="input-email" placeholder="Email">
+          <select name="" id="house">
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
         <label id="label-family" for="family">Qual sua família?</label>
         <label for="frontend">
           <input type="radio" id="frontend" name="family" value="Frontend">Família Frontend

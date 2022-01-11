@@ -38,6 +38,11 @@ main {
   max-width: 50%;
 }
 
+.input-infos {
+  display: flex;
+  flex-direction: row;
+}
+
 #frontend {
   order: 1;
 }
