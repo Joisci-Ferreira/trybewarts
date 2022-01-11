@@ -19,9 +19,19 @@
     </header>
     <main>
       <form action="" method ="get" id="evaluation-form" enctype="multipart/form-data">
-        
+        <label id="label-family" for="family">Qual sua família?</label>
+        <label for="frontend">
+          <input type="radio" id="frontend" name="family" value="Frontend">Família Frontend
+        </label>
+        <label for="backend">
+          <input type="radio" id="backend" name="family" value="Backend">Família Backend
+      </label>
+      <label for="fullstack">
+        <input type="radio" id="fullstack" name="family" value="FullStack">Família FullStack
+      </label>
       </form>
     </main>
+    <script src="/script.js"></script>
 </body>
 
 </html>

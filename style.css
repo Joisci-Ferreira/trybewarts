@@ -24,3 +24,18 @@ main {
   flex-direction: column;
 }
 
+#input-name, #input-lastname {
+  max-width: 50%;
+}
+
+#frontend {
+  order: 1;
+}
+
+#backend {
+  order: 2;
+}
+
+#fullstack {
+  order: 3;
+}
