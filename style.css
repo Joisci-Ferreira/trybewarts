@@ -17,3 +17,7 @@ main {
   width: 675px;
   flex-direction: column;
 }
+
+#input-name, #input-lastname {
+  max-width: 50%;
+}
