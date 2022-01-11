@@ -1,10 +1,20 @@
-.header{
+*{
+  margin: 0px;
+  padding: 0px;
+}
 
+.header{
   background-color: rgb(50, 167, 145);
   height: 50px; 
   display: flex;
-  
+  justify-content: space-between;
+  align-items: center;
 }
+
+.header img {
+  height: 90%;
+}
+
 .trybewarts-login {
   display: flex;
   height: 20px;
