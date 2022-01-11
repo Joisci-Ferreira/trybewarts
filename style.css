@@ -28,6 +28,10 @@ main {
   display: flex;
 }
 
+#trybewarts-forms-logo {
+    height: 500px;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
