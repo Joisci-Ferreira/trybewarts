@@ -9,3 +9,13 @@ function login() {
         alert("Email ou senha inválidos.")
     }
 }
+
+function habilitaBotao () {
+  let recebe = document.getElementById('agreement');
+  let recebeBotao = document.getElementById('submit-btn');
+  if (recebe.checked === true) {
+    recebeBotao.disabled = false;
+  } else {
+    recebeBotao.disabled = true;
+  }
+}
