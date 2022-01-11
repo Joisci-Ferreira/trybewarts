@@ -38,13 +38,9 @@ main {
   flex-direction: column;
 }
 
-#input-name, #input-lastname {
-  max-width: 50%;
-}
-
-.input-infos {
-  display: flex;
-  flex-direction: row;
+#input-name, #input-lastname, #house, #input-email {
+  max-width: 49%;
+  width: 100%;
 }
 
 #frontend {
