@@ -1,5 +1,12 @@
 .header{
+<<<<<<< HEAD
   display: flex;
   background-color: rgb(50, 167, 145);
   height: 50px;
 }
+=======
+    display: flex;
+    background-color: rgb(50, 167, 145);
+    height: 50px;
+    
+>>>>>>> 3b3ab26e884deff1b7b5a72b41ecc0faca89b174
