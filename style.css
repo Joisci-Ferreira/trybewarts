@@ -49,3 +49,16 @@ main {
 #fullstack {
   order: 3;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: gray;
+}
+
+footer p {
+  margin: auto;
+  color: white;
+  font-size: large;
+}
