@@ -73,6 +73,7 @@ function showContent() {
     cria.innerText += ` ${recebeInput[index].value}`;
   }
   recebe.appendChild(cria);
+  }
 }
 
 function showRate() {
