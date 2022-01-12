@@ -55,6 +55,10 @@ main {
   order: 3;
 }
 
+#radio-buttons {
+    display: flex;
+}
+
 footer {
   display: flex;
   justify-content: center;
