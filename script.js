@@ -30,7 +30,9 @@ function showName() {
   const recebeNome = document.getElementById('input-name');
   const recebeSobrenome = document.getElementById('input-lastname');
   const cria = document.createElement('p');
-  cria.innerText = 'Nome: ' + recebeNome.value + ' ' + recebeSobrenome.value;
+
+  cria.innerText = `Nome:  ${recebeNome.value} ' ' ${recebeSobrenome.value}`;
+
   recebe.appendChild(cria);
 }
 
@@ -38,7 +40,9 @@ function showEmail() {
   const recebe = document.getElementById('show-info');
   const recebeInput = document.getElementById('input-email');
   const cria = document.createElement('p');
-  cria.innerText = 'Email: ' + recebeInput.value;
+
+  cria.innerText = `Email:  ${recebeInput.value}`;
+
   recebe.appendChild(cria);
 }
 
@@ -46,7 +50,9 @@ function showHouse() {
   const recebe = document.getElementById('show-info');
   const recebeInput = document.getElementById('house');
   const cria = document.createElement('p');
-  cria.innerText = 'Casa: ' + recebeInput.value;
+
+  cria.innerText = `Casa: ${recebeInput.value}`;
+
   recebe.appendChild(cria);
 }
 
@@ -69,10 +75,13 @@ function showContent() {
   const cria = document.createElement('p');
   cria.innerText = 'Matérias:';
   for (let index = 0; index < recebeInput.length; index++) {
-    if (recebeInput[index].checked === true)
-      cria.innerText += ' ' + recebeInput[index].value;
+
+    if (recebeInput[index].checked === true) {
+      cria.innerText += ` ${recebeInput[index].value}`;
+    }
+    recebe.appendChild(cria);
+
   }
-  recebe.appendChild(cria);
 }
 
 function showRate() {
@@ -92,7 +101,9 @@ function showObserves() {
   const recebe = document.getElementById('show-info');
   const recebeInput = document.getElementById('textarea');
   const cria = document.createElement('p');
-  cria.innerText = 'Observações: ' + recebeInput.value;
+
+  cria.innerText = `Observações: ${recebeInput.value}`;
+
   recebe.appendChild(cria);
 }
 
