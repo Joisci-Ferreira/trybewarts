@@ -74,14 +74,11 @@ function showContent() {
   const recebeInput = document.querySelectorAll('.subject');
   const cria = document.createElement('p');
   cria.innerText = 'Matérias:';
-
   for (let index = 0; index < recebeInput.length; index + 1) {
-
     if (recebeInput[index].checked === true) {
       cria.innerText += ` ${recebeInput[index].value}`;
     }
     recebe.appendChild(cria);
-
   }
 }
 
