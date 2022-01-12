@@ -19,3 +19,9 @@ function habilitaBotao () {
     recebeBotao.disabled = true;
   }
 }
+
+function contaCaracteres (textArea, idContador) {
+  let maxCar = 500;
+  let recebe = document.getElementById(idContador);
+  recebe.innerText = maxCar - (textArea.value.length);
+}

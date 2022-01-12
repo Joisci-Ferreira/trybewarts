@@ -59,6 +59,11 @@ main {
     display: flex;
 }
 
+.counter-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 footer {
   display: flex;
   justify-content: center;
