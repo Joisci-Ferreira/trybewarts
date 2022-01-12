@@ -29,7 +29,7 @@ function contaCaracteres (textArea, idContador) {
 function showName () {
   let recebe = document.getElementById('show-info');
   let recebeNome = document.getElementById('input-name');
-  let recebeSobrenome = document.getElementById('input-name');
+  let recebeSobrenome = document.getElementById('input-lastname');
   let cria = document.createElement('p');
   cria.innerText = 'Nome: ' + recebeNome.value + ' ' + recebeSobrenome.value;
   recebe.appendChild(cria);
@@ -53,7 +53,7 @@ function showHouse () {
 
 function showFamily () {
   let recebe = document.getElementById('show-info');
-  let recebeInput = document.querySelector('.family');
+  let recebeInput = document.querySelectorAll('.family');
   let cria = document.createElement('p');
   cria.innerText = 'Família: ';
   for (let index = 0; index < recebeInput.length ; index++){
@@ -66,25 +66,24 @@ function showFamily () {
 
 function showContent () {
   let recebe = document.getElementById('show-info');
-  let recebeInput = document.querySelector('.subject');
+  let recebeInput = document.querySelectorAll('.subject');
   let cria = document.createElement('p');
   cria.innerText = 'Matérias:';
   for (let index = 0; index < recebeInput.length; index++) {
-    if (recebeInput[index].checked === true){
-      cria.innerText+= ' ' + recebeInput[index].value;
-    }
+    if (recebeInput[index].checked === true)
+    cria.innerText+= ' ' + recebeInput[index].value;
   }
   recebe.appendChild(cria);
 }
 
 function showRate () {
   let recebe = document.getElementById('show-info');
-  let recebeInput = document.querySelector('.rate');
+  let recebeInput = document.querySelectorAll('.rate');
   let cria = document.createElement('p');
-  cria.innerText = 'Avaliação:';
-  for (let index = 0; index < recebeInput.length; index++) {
-    if (recebeInput[index].checked === true){
-      cria.innerText+= ' ' + recebeInput[index].value;
+  cria.innerText = 'Avaliação: ';
+  for ( let index = 0 ; index < recebeInput.length ; index++) {
+    if (recebeInput[index].checked === true) {
+      cria.innerText+= recebeInput[index].value;
     }
   }
   recebe.appendChild(cria);
@@ -92,7 +91,7 @@ function showRate () {
 
 function showObserves () {
   let recebe = document.getElementById('show-info');
-  let recebeInput = document.getElementById('text-area');
+  let recebeInput = document.getElementById('textarea');
   let cria = document.createElement('p');
   cria.innerText = 'Observações: ' + recebeInput.value;
   recebe.appendChild(cria);
