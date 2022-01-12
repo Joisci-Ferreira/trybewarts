@@ -69,8 +69,8 @@ function showContent() {
   const cria = document.createElement('p');
   cria.innerText = 'Matérias:';
   for (let index = 0; index < recebeInput.length; index++) {
-    if (recebeInput[index].checked === true)
-    cria.innerText += ' ' + recebeInput[index].value;
+    if (recebeInput[index].checked === true) {
+    cria.innerText += ` ${recebeInput[index].value}`;
   }
   recebe.appendChild(cria);
 }
@@ -80,7 +80,7 @@ function showRate() {
   const recebeInput = document.querySelectorAll('.rate');
   const cria = document.createElement('p');
   cria.innerText = 'Avaliação: ';
-  for (let index = 0 ; index < recebeInput.length; index++) {
+  for (let index = 0; index < recebeInput.length; index++) {
     if (recebeInput[index].checked === true) {
       cria.innerText += recebeInput[index].value;
     }
