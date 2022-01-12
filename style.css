@@ -43,6 +43,11 @@ main {
   width: 100%;
 }
 
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
 #frontend {
   order: 1;
 }
@@ -57,6 +62,10 @@ main {
 
 #radio-buttons {
     display: flex;
+}
+
+#textarea {
+  resize: none;
 }
 
 .counter-container {

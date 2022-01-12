@@ -25,3 +25,85 @@ function contaCaracteres (textArea, idContador) {
   let recebe = document.getElementById(idContador);
   recebe.innerText = maxCar - (textArea.value.length);
 }
+
+function showName () {
+  let recebe = document.getElementById('show-info');
+  let recebeNome = document.getElementById('input-name');
+  let recebeSobrenome = document.getElementById('input-name');
+  let cria = document.createElement('p');
+  cria.innerText = 'Nome: ' + recebeNome.value + ' ' + recebeSobrenome.value;
+  recebe.appendChild(cria);
+}
+
+function showEmail () {
+  let recebe = document.getElementById('show-info');
+  let recebeInput = document.getElementById('input-email');
+  let cria = document.createElement('p');
+  cria.innerText = 'Email: ' + recebeInput.value;
+  recebe.appendChild(cria);
+}
+
+function showHouse () {
+  let recebe = document.getElementById('show-info');
+  let recebeInput = document.getElementById('house');
+  let cria = document.createElement('p');
+  cria.innerText = 'Casa: ' + recebeInput.value;
+  recebe.appendChild(cria);
+}
+
+function showFamily () {
+  let recebe = document.getElementById('show-info');
+  let recebeInput = document.querySelector('.family');
+  let cria = document.createElement('p');
+  cria.innerText = 'Família: ';
+  for (let index = 0; index < recebeInput.length ; index++){
+    if (recebeInput[index].checked === true) {
+      cria.innerText+= recebeInput[index].value;
+    }
+  }
+  recebe.appendChild(cria);
+}
+
+function showContent () {
+  let recebe = document.getElementById('show-info');
+  let recebeInput = document.querySelector('.subject');
+  let cria = document.createElement('p');
+  cria.innerText = 'Matérias:';
+  for (let index = 0; index < recebeInput.length; index++) {
+    if (recebeInput[index].checked === true){
+      cria.innerText+= ' ' + recebeInput[index].value;
+    }
+  }
+  recebe.appendChild(cria);
+}
+
+function showRate () {
+  let recebe = document.getElementById('show-info');
+  let recebeInput = document.querySelector('.rate');
+  let cria = document.createElement('p');
+  cria.innerText = 'Avaliação:';
+  for (let index = 0; index < recebeInput.length; index++) {
+    if (recebeInput[index].checked === true){
+      cria.innerText+= ' ' + recebeInput[index].value;
+    }
+  }
+  recebe.appendChild(cria);
+}
+
+function showObserves () {
+  let recebe = document.getElementById('show-info');
+  let recebeInput = document.getElementById('text-area');
+  let cria = document.createElement('p');
+  cria.innerText = 'Observações: ' + recebeInput.value;
+  recebe.appendChild(cria);
+}
+
+function criaRetorno () {
+  showName();
+  showEmail();
+  showHouse();
+  showFamily();
+  showContent();
+  showRate();
+  showObserves();
+}
