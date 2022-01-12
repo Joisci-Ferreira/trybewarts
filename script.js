@@ -70,9 +70,9 @@ function showContent() {
   cria.innerText = 'Matérias:';
   for (let index = 0; index < recebeInput.length; index++) {
     if (recebeInput[index].checked === true) {
-    cria.innerText += ` ${recebeInput[index].value}`;
-  }
-  recebe.appendChild(cria);
+      cria.innerText += ` ${recebeInput[index].value}`;
+    }
+    recebe.appendChild(cria);
   }
 }
 
