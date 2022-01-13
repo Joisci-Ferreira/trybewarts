@@ -15,7 +15,7 @@
         <form action="" class="trybewarts-login">
             <input type="email" name="email" placeholder="Email" id="nomeUsuario">
             <input type="text" name="password" placeholder="Senha" id="senha">
-            <button type="submit" onclick="login()">Entrar</button> 
+            <button type="submit" id="login-btn">Entrar</button> 
         </form>
     </header>
     <main>
@@ -70,13 +70,13 @@
         </div>
       
         <label class="textarea" for="">Deixe seu comentário:</label>
-        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500" onkeyup="contaCaracteres(this, 'counter')"></textarea>
+        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
         <div class="counter-container">
           <p id="counter">500</p>
         </div>
         <label for="agreement" id="label-infos">
           Você concorda com o uso das informações acima?
-          <input type="checkbox" id="agreement" onclick="habilitaBotao()">
+          <input type="checkbox" id="agreement">
         </label>
 
         <button type="submit" id="submit-btn" disabled>Enviar</button>

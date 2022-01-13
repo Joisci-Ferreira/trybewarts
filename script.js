@@ -9,6 +9,11 @@ function login() {
   }
 }
 
+function chamaLogin() {
+  const recebe = document.getElementById('login-btn');
+  recebe.addEventListener('click', login);
+}
+
 function habilitaBotao() {
   const recebe = document.getElementById('agreement');
   const recebeBotao = document.getElementById('submit-btn');
@@ -19,10 +24,21 @@ function habilitaBotao() {
   }
 }
 
-function contaCaracteres(textArea, idContador) {
+function chamaHabilitaBotao() {
+  const recebe = document.getElementById('agreement');
+  recebe.addEventListener('click', habilitaBotao);
+}
+
+function contaCaracteres() {
   const maxCar = 500;
-  const recebe = document.getElementById(idContador);
-  recebe.innerText = maxCar - (textArea.value.length);
+  const recebeTextarea = document.getElementById('textarea').value;
+  const recebe = document.getElementById('counter');
+  recebe.innerText = maxCar - (recebeTextarea.length);
+}
+
+function chamaContaCaracteres() {
+  const recebe = document.getElementById('textarea');
+  recebe.addEventListener('keyup', contaCaracteres);
 }
 
 function showName() {
@@ -114,3 +130,15 @@ function criaRetorno() {
   showRate();
   showObserves();
 }
+
+function chamaCriaRetorno() {
+  const recebe = document.getElementById('submit-btn');
+  recebe.addEventListener('click', criaRetorno);
+}
+
+window.onload = () => {
+  chamaLogin();
+  chamaHabilitaBotao();
+  chamaContaCaracteres();
+  chamaCriaRetorno();
+};
