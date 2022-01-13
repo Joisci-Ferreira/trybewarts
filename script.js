@@ -127,7 +127,7 @@ function showObserves() {
 function exibeInfos() {
   const recebe = document.getElementById('inputs-form');
   const recebeInfos = document.getElementById('show-info');
-  recebe.hidden = true;
+  recebe.style.display = 'none';
   recebeInfos.hidden = false;
 }
 
