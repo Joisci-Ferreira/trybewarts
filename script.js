@@ -131,7 +131,8 @@ function exibeInfos() {
   recebeInfos.hidden = false;
 }
 
-function criaRetorno() {
+function criaRetorno(event) {
+  event.preventDefault();
   showName();
   showEmail();
   showHouse();
