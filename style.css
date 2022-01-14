@@ -38,6 +38,11 @@ main {
   flex-direction: column;
 }
 
+#inputs-form {
+  display: flex;
+  flex-direction: column;
+}
+
 #input-name , #input-lastname , #house , #input-email {
   max-width: 49%;
   width: 100%;
