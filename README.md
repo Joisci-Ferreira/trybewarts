@@ -32,7 +32,7 @@ Projeto desenvolvido no módulo de fundamentros do curso da Trybe, onde foi dese
 - Javascript
 
 
-## Hbilidades
+## Habilidades
 
 Neste projeto, fui capaz de:
 
