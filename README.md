@@ -21,23 +21,23 @@ Projeto desenvolvido no módulo de fundamentros do curso da Trybe, onde foi dese
 
 ## Integrantes
 
-Joiscilene Ferreira.
-Lucas Mesquita.
+- Joiscilene Ferreira.
+- Lucas Mesquita.
 
 
 ## Tecnologias
 
-HTML
-CSS
-Javascript
+- HTML
+- CSS
+- Javascript
 
 
 ## Hbilidades
 
 Neste projeto, fui capaz de:
 
-Criar formulários em HTML;
-Utilizar CSS Flexbox para criar layouts flexíveis;
-Criar regras CSS específicas para serem aplicadas a dispositivos móveis;
-Construir páginas que alteram o seu layout de acordo com a orientação da tela;
+- Criar formulários em HTML;
+- Utilizar CSS Flexbox para criar layouts flexíveis;
+- Criar regras CSS específicas para serem aplicadas a dispositivos móveis;
+- Construir páginas que alteram o seu layout de acordo com a orientação da tela;
 
